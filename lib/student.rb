@@ -8,6 +8,14 @@ class Student
     @name = name
     @grade = grade
   end
-  
+
+  def self.create_table
+    sql = <<- sql
+    CREATE TABLE students (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    grade INTEGER);
+  end
+
 
 end
